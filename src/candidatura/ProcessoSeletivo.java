@@ -5,6 +5,18 @@ public class ProcessoSeletivo {
   public static void main(String[] args) {
     System.out.println("Processo Seletivo");
     selecaoCandidatos();
+    imprimirSelecionados();
+
+  }
+
+  static void imprimirSelecionados(){
+    String [] candidatos = {"Fernanda", "Ricardo", "Pedro", "Ana", "Leandro"};
+    System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
+
+    for(int indice = 0; indice < candidatos.length; indice++){
+      System.out.println("O candidato selecionado de nº " + (indice + 1) + " é o " + candidatos[indice]);
+    }
+
 
   }
 
